@@ -66,7 +66,7 @@ public class GamePanel extends JPanel implements ActionListener {
 
     public void draw(Graphics g) {
         if (running) {
-            g.setColor(Color.RED);
+            g.setColor(Color.BLUE);
             g.fillOval(appleX, appleY, UNIT_SIZE, UNIT_SIZE);
             timer.setDelay(DELAY);
             for (int i = 0; i < bodyParts; i++) {
@@ -75,7 +75,7 @@ public class GamePanel extends JPanel implements ActionListener {
                     g.setColor(new Color(random.nextInt(255), random.nextInt(255), random.nextInt(255)));
                     g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
                 } else if (i == 0) {
-                    g.setColor(Color.GREEN);
+                    g.setColor(Color.GRAY);
                     g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
                 } else {
                     g.setColor(new Color(45, 180, 0));

@@ -13,7 +13,7 @@ public class MenuPanel extends JPanel {
         this.frame = frame;
 
         setPreferredSize(new Dimension(width, height));
-        setBackground(Color.GRAY);
+        setBackground(Color.DARK_GRAY);
         setLayout(null);
 
         JButton sp = new JButton("SinglePlayer");
