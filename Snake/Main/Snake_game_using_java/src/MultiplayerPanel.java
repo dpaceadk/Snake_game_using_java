@@ -65,11 +65,11 @@ public class MultiplayerPanel extends JPanel implements ActionListener {
         applesEaten2 = 0;
         for (int i = bodyParts1; i >= 0; i--) {
             x1[i] = 0;
-            y1[i] = 0;
+            y1[i] = 10;
         }
         for (int i = bodyParts2; i >= 0; i--) {
             x2[i] = 0;
-            y2[i] = 0;
+            y2[i] = 570;
         }
         startGame();
     }

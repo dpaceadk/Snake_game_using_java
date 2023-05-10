@@ -10,7 +10,7 @@ public class GamePanel extends JPanel implements ActionListener {
 
     final int SCREEN_WIDTH;
     final int SCREEN_HEIGHT;
-    static final int UNIT_SIZE = 25;
+    static final int UNIT_SIZE = 15;
     final int GAME_UNITS;
     static final int DELAY = 75;
     final int x[];
@@ -71,7 +71,7 @@ public class GamePanel extends JPanel implements ActionListener {
             timer.setDelay(DELAY);
             for (int i = 0; i < bodyParts; i++) {
                 if (applesEaten % 10 == 0 && applesEaten != 0) {
-                    timer.setDelay(25);
+                    timer.setDelay(45);
                     g.setColor(new Color(random.nextInt(255), random.nextInt(255), random.nextInt(255)));
                     g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
                 } else if (i == 0) {
